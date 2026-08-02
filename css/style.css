@@ -1,0 +1,1065 @@
+/* =====================================
+   AI IMAGE STUDIO PRO
+   MAIN STYLE
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+:root{
+
+    --bg:#050816;
+    --bg-light:#0d142b;
+    --card:rgba(255,255,255,0.06);
+
+    --primary:#6c63ff;
+    --secondary:#00e5ff;
+
+    --white:#ffffff;
+    --gray:#b8c0d9;
+
+    --border:rgba(255,255,255,0.12);
+
+    --radius:20px;
+
+    --shadow:
+    0 0 40px rgba(0,229,255,0.15);
+
+}
+
+
+body{
+
+    background:
+    linear-gradient(
+    135deg,
+    #050816,
+    #101936
+    );
+
+    color:var(--white);
+
+    font-family:
+    'Poppins',
+    sans-serif;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    border:none;
+
+}
+
+
+/* Container */
+
+.container{
+
+    width:92%;
+
+    max-width:1280px;
+
+    margin:auto;
+
+}
+
+
+/* Glass Effect */
+
+.glass{
+
+    background:
+    var(--card);
+
+    border:
+    1px solid var(--border);
+
+    backdrop-filter:
+    blur(20px);
+
+    border-radius:
+    var(--radius);
+
+    box-shadow:
+    var(--shadow);
+
+}
+
+
+/* Navbar */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:
+    rgba(5,8,22,0.7);
+
+    backdrop-filter:
+    blur(20px);
+
+    border-bottom:
+    1px solid var(--border);
+
+}
+
+
+.nav-wrapper{
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    background:
+    linear-gradient(
+    90deg,
+    var(--secondary),
+    var(--primary)
+    );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}
+
+
+.nav-links{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+
+.nav-links a{
+
+    color:var(--gray);
+
+    transition:.3s;
+
+}
+
+
+.nav-links a:hover{
+
+    color:white;
+
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero{
+
+    padding-top:150px;
+
+    padding-bottom:100px;
+
+}
+
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:
+    rgba(108,99,255,.15);
+
+    border:
+    1px solid rgba(108,99,255,.35);
+
+    color:#d9d5ff;
+
+    margin-bottom:20px;
+
+}
+
+
+.hero h1{
+
+    font-size:60px;
+
+    line-height:1.15;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+
+.hero p{
+
+    color:var(--gray);
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 28px;
+
+    border-radius:14px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+.btn-primary{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+    );
+
+    color:white;
+
+    box-shadow:
+
+    0 0 25px rgba(0,229,255,.3);
+
+}
+
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 0 40px rgba(0,229,255,.5);
+
+}
+
+
+
+.btn-outline{
+
+    background:
+
+    transparent;
+
+    border:
+
+    1px solid var(--border);
+
+    color:white;
+
+}
+
+
+.btn-outline:hover{
+
+    background:
+
+    rgba(255,255,255,.08);
+
+}
+
+
+/* =====================================
+   HERO PREVIEW CARD
+===================================== */
+
+
+.preview-card{
+
+    padding:25px;
+
+}
+
+
+.preview-box{
+
+    height:380px;
+
+    margin-top:20px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #111936,
+    #070b18
+    );
+
+
+    border:
+
+    1px solid var(--border);
+
+    color:var(--gray);
+
+}
+
+
+
+/* =====================================
+   AI GENERATOR
+===================================== */
+
+
+.generator{
+
+    padding:90px 0;
+
+}
+
+
+
+.generator-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    1.1fr .9fr;
+
+    gap:35px;
+
+}
+
+
+.generator-box{
+
+    padding:30px;
+
+    background:
+
+    var(--card);
+
+    border:
+
+    1px solid var(--border);
+
+    border-radius:22px;
+
+    backdrop-filter:blur(20px);
+
+}
+
+
+.generator-title{
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+}
+
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--gray);
+
+}
+
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+
+
+    width:100%;
+
+    padding:15px;
+
+    background:#10182f;
+
+    color:white;
+
+    border:
+
+    1px solid var(--border);
+
+    border-radius:14px;
+
+    outline:none;
+
+}
+
+
+.input-group textarea{
+
+    min-height:140px;
+
+    resize:none;
+
+}
+
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus{
+
+    border-color:var(--secondary);
+
+}
+
+/* =====================================
+   UPLOAD BOX
+===================================== */
+
+
+.upload-box{
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    border:
+
+    2px dashed rgba(255,255,255,.2);
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.upload-box:hover{
+
+    border-color:var(--secondary);
+
+    background:
+
+    rgba(0,229,255,.05);
+
+}
+
+
+.upload-box h3{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+
+.upload-box span{
+
+    color:var(--gray);
+
+}
+
+
+
+/* =====================================
+   STYLE CARDS
+===================================== */
+
+
+.styles-section{
+
+    padding:90px 0;
+
+}
+
+
+
+.section-title{
+
+    text-align:center;
+
+    font-size:40px;
+
+    font-weight:800;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.style-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.style-card{
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    background:
+
+    var(--card);
+
+    border:
+
+    1px solid var(--border);
+
+    transition:.3s;
+
+}
+
+
+.style-card:hover{
+
+    transform:
+
+    translateY(-8px);
+
+    border-color:
+
+    var(--secondary);
+
+    box-shadow:
+
+    0 0 30px rgba(0,229,255,.2);
+
+}
+
+
+.style-card .icon{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* =====================================
+   FEATURE CARDS
+===================================== */
+
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+.feature-card{
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:
+
+    var(--card);
+
+    border:
+
+    1px solid var(--border);
+
+    transition:.3s;
+
+}
+
+
+.feature-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+.feature-card h3{
+
+    margin:15px 0;
+
+}
+
+
+.feature-card p{
+
+    color:var(--gray);
+
+    line-height:1.7;
+
+}
+
+
+
+/* =====================================
+   GALLERY
+===================================== */
+
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    border:
+
+    1
+
+/* =====================================
+   PRICING SECTION
+===================================== */
+
+
+.pricing-section{
+
+    padding:90px 0;
+
+}
+
+
+.pricing-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+.pricing-card{
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border-radius:22px;
+
+    background:
+
+    var(--card);
+
+    border:
+
+    1px solid var(--border);
+
+    transition:.3s;
+
+}
+
+
+.pricing-card:hover{
+
+    transform:
+
+    translateY(-10px);
+
+    border-color:
+
+    var(--secondary);
+
+}
+
+
+.pricing-card h2{
+
+    font-size:28px;
+
+}
+
+
+.price{
+
+    font-size:45px;
+
+    font-weight:800;
+
+    margin:20px 0;
+
+}
+
+
+
+.pricing-card ul{
+
+    list-style:none;
+
+    color:var(--gray);
+
+    line-height:2.2;
+
+}
+
+
+
+/* =====================================
+   FAQ
+===================================== */
+
+
+.faq-section{
+
+    padding:90px 0;
+
+}
+
+
+.faq-item{
+
+    padding:22px;
+
+    margin-bottom:15px;
+
+    background:
+
+    var(--card);
+
+    border:
+
+    1px solid var(--border);
+
+    border-radius:18px;
+
+}
+
+
+.faq-item h3{
+
+    margin-bottom:10px;
+
+}
+
+
+.faq-item p{
+
+    color:var(--gray);
+
+}
+
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+
+.footer{
+
+    padding:60px 0 30px;
+
+    text-align:center;
+
+    border-top:
+
+    1px solid var(--border);
+
+}
+
+
+.footer h2{
+
+    font-size:30px;
+
+}
+
+
+.footer p{
+
+    color:var(--gray);
+
+    margin-top:15px;
+
+}
+
+
+
+/* =====================================
+   LOADING ANIMATION
+===================================== */
+
+
+.loader{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    border:
+
+    5px solid rgba(255,255,255,.15);
+
+    border-top-color:
+
+    var(--secondary);
+
+    animation:
+
+    rotate 1s linear infinite;
+
+    margin:auto;
+
+}
+
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+
+/* =====================================
+   ANIMATION EFFECTS
+===================================== */
+
+
+.fade-in{
+
+    animation:
+
+    fade .8s ease;
+
+}
+
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+.glow{
+
+    animation:
+
+    glow 2s infinite alternate;
+
+}
+
+
+
+@keyframes glow{
+
+    from{
+
+        box-shadow:
+
+        0 0 15px var(--primary);
+
+    }
+
+    to{
+
+        box-shadow:
+
+        0 0 40px var(--secondary);
+
+    }
+
+}
+
+
+
+/* =====================================
+   UTILITY
+===================================== */
+
+
+.text-center{
+
+    text-align:center;
+
+}
+
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+
+.mt-40{
+
+    margin-top:40px;
+
+}
+
+
+.hidden{
+
+    display:none;
+
+}
