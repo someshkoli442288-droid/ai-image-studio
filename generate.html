@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+
+<title>
+AI Image Generator
+</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<div class="container">
+
+<div class="nav-wrapper">
+
+
+<div class="logo">
+
+AI Image Studio
+
+</div>
+
+
+<nav class="nav-links">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="generate.html">
+Generate
+</a>
+
+<a href="history.html">
+History
+</a>
+
+<a href="pricing.html">
+Pricing
+</a>
+
+
+</nav>
+
+
+</div>
+
+</div>
+
+</header>
+
+
+
+
+<section class="generator"
+style="padding-top:140px;">
+
+
+<div class="container">
+
+
+<h1 class="section-title">
+
+✨ Create AI Image
+
+</h1>
+
+
+
+<div class="generator-grid">
+
+
+
+<!-- Generator Form -->
+
+
+<div class="generator-box">
+
+
+<h2 class="generator-title">
+
+Text To Image
+
+</h2>
+
+
+
+<div class="input-group">
+
+<label>
+Your Prompt
+</label>
+
+
+<textarea
+id="imagePrompt"
+placeholder="Describe your dream image...">
+
+</textarea>
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>
+Choose Style
+</label>
+
+
+<select id="imageStyle">
+
+
+<option>
+Realistic
+</option>
+
+
+<option>
+Anime
+</option>
+
+
+<option>
+Ghibli
+</option>
+
+
+<option>
+3D Art
+</option>
+
+
+<option>
+Cinematic
+</option>
+
+
+<option>
+Fantasy
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+<div class="input-group">
+
+<label>
+Aspect Ratio
+</label>
+
+
+<select id="imageRatio">
+
+
+<option>
+Square 1:1
+</option>
+
+
+<option>
+Landscape 16:9
+</option>
+
+
+<option>
+Portrait 9:16
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+<button 
+class="generate-button"
+id="createImage">
+
+
+Generate Image 🚀
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<!-- Preview -->
+
+
+<div class="generator-box">
+
+
+<h2 class="generator-title">
+
+Preview
+
+</h2>
+
+
+
+<div class="preview-box"
+id="imagePreview">
+
+
+Your AI Image Will Appear Here
+
+
+</div>
+
+
+<div class="loader hidden"
+id="imageLoader">
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<script src="js/app.js"></script>
+
+<script src="js/generate.js"></script>
+
+
+</body>
+
+</html>
