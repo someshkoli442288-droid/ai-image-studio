@@ -2,66 +2,95 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>AI Image Studio Pro</title>
+<meta charset="UTF-8">
 
-  <meta name="description"
-    content="Generate AI Images from Text or Edit Images using AI.">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+<title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+AI Image Studio Pro
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+</title>
+
+<meta
+name="description"
+content="Professional AI Image Generator">
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
+<link
+rel="stylesheet"
+href="css/responsive.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
 </head>
 
 <body>
-
-<div class="bg-blur blur1"></div>
-<div class="bg-blur blur2"></div>
 
 <header class="navbar">
 
 <div class="container">
 
+<div class="nav-wrapper">
+
 <div class="logo">
 
-<h2>AI Image Studio</h2>
+AI Image Studio
 
 </div>
 
-<nav>
+<nav class="nav-links">
 
 <a href="#">Home</a>
 
-<a href="#generator">Generate</a>
+<a href="#generator">
 
-<a href="#gallery">Gallery</a>
+Generate
 
-<a href="#pricing">Pricing</a>
+</a>
 
-<a href="#faq">FAQ</a>
+<a href="#gallery">
+
+Gallery
+
+</a>
+
+<a href="#pricing">
+
+Pricing
+
+</a>
+
+<a href="#about">
+
+About
+
+</a>
 
 </nav>
 
-<div class="nav-buttons">
+<div class="nav-actions">
 
-<button class="login-btn">
+<button class="btn btn-outline">
 
 Login
 
 </button>
 
-<button class="pro-btn">
+<button class="btn btn-primary">
 
-Go Pro
+Get Started
 
 </button>
+
+</div>
 
 </div>
 
@@ -73,52 +102,79 @@ Go Pro
 
 <div class="container">
 
-<div class="hero-left">
+<div class="hero-grid">
+
+<div>
 
 <span class="hero-tag">
 
-✨ AI Powered Image Generator
+✨ Powered by AI
 
 </span>
 
 <h1>
 
-Create Stunning AI Images
-From Text In Seconds
+Create Amazing AI Images
+From Simple Text
 
 </h1>
 
 <p>
 
-Generate realistic, anime, Ghibli, cinematic and creative AI artwork using powerful AI models.
+Generate realistic images,
+anime art,
+Ghibli style,
+3D renders,
+logos,
+wallpapers
+and much more.
 
 </p>
 
-<div class="hero-buttons">
+<div
+style="display:flex;
+gap:15px;
+margin-top:30px;">
 
-<button class="generate-btn">
+<a
+href="generate.html"
+class="btn btn-primary">
 
-Generate Now
+Generate Image
 
-</button>
+</a>
 
-<button class="secondary-btn">
+<a
+href="#gallery"
+class="btn btn-outline">
 
-Watch Demo
+View Gallery
 
-</button>
+</a>
 
 </div>
 
 </div>
 
-<div class="hero-right">
+<div>
 
-<div class="hero-card">
+<div class="glass-card">
 
-<h3>AI Preview</h3>
+<h3>
 
-<div class="preview-box">
+AI Image Preview
+
+</h3>
+
+<div
+style="
+height:380px;
+border-radius:18px;
+margin-top:20px;
+background:#121A32;
+display:flex;
+align-items:center;
+justify-content:center;">
 
 Image Preview
 
@@ -130,4 +186,452 @@ Image Preview
 
 </div>
 
+</div>
+
 </section>
+
+  <!-- ===========================
+     AI GENERATOR SECTION
+=========================== -->
+
+<section id="generator" class="generator">
+
+<div class="container">
+
+<div class="generator-grid">
+
+<!-- LEFT -->
+
+<div class="generator-box">
+
+<h2 class="generator-title">
+
+🪄 AI Image Generator
+
+</h2>
+
+<div class="input-group">
+
+<label>
+
+Text Prompt
+
+</label>
+
+<textarea
+id="prompt"
+placeholder="Describe your image...
+Example:
+A futuristic cyberpunk city at night with neon lights.">
+
+</textarea>
+
+</div>
+
+
+<div class="input-group">
+
+<label>
+
+Negative Prompt
+
+</label>
+
+<input
+type="text"
+id="negativePrompt"
+placeholder="Blur, low quality, watermark">
+
+</div>
+
+
+<div class="input-group">
+
+<label>
+
+Image Style
+
+</label>
+
+<select id="style">
+
+<option>Realistic</option>
+
+<option>Anime</option>
+
+<option>Ghibli</option>
+
+<option>Pixar</option>
+
+<option>3D Render</option>
+
+<option>Cinematic</option>
+
+<option>Fantasy</option>
+
+<option>Cyberpunk</option>
+
+<option>Watercolor</option>
+
+<option>Sketch</option>
+
+<option>Logo</option>
+
+</select>
+
+</div>
+
+
+<div class="input-group">
+
+<label>
+
+Aspect Ratio
+
+</label>
+
+<select id="ratio">
+
+<option>1:1 Square</option>
+
+<option>16:9 Landscape</option>
+
+<option>9:16 Portrait</option>
+
+<option>4:5 Instagram</option>
+
+</select>
+
+</div>
+
+
+<button
+class="generate-button"
+id="generateBtn">
+
+✨ Generate Image
+
+</button>
+
+</div>
+
+
+<!-- RIGHT -->
+
+<div class="generator-box">
+
+<h2 class="generator-title">
+
+🖼 Preview
+
+</h2>
+
+<div class="upload-box">
+
+<h3>
+
+Drag & Drop Image
+
+</h3>
+
+<span>
+
+or click to upload for Image → Image
+
+</span>
+
+<input
+type="file"
+id="imageUpload"
+hidden>
+
+</div>
+
+<div
+style="margin-top:25px;">
+
+<div class="loader hidden"
+id="loader">
+
+</div>
+
+<div
+id="previewArea"
+style="margin-top:20px;">
+
+<p
+style="color:#C9D1D9;
+text-align:center;">
+
+Generated image will appear here.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+  <!-- ===========================
+     AI STYLES
+=========================== -->
+
+<section id="styles" class="features">
+
+<div class="container">
+
+<h2 class="text-center">
+
+🎨 Popular AI Styles
+
+</h2>
+
+<p class="text-center mt-20">
+
+Choose your favorite AI art style.
+
+</p>
+
+<div class="feature-grid mt-40">
+
+<div class="glass-card feature-card">
+<div class="feature-icon">🎨</div>
+<h3>Realistic</h3>
+<p>Ultra realistic AI photography.</p>
+</div>
+
+<div class="glass-card feature-card">
+<div class="feature-icon">🌸</div>
+<h3>Ghibli</h3>
+<p>Beautiful Studio Ghibli inspired art.</p>
+</div>
+
+<div class="glass-card feature-card">
+<div class="feature-icon">🎌</div>
+<h3>Anime</h3>
+<p>High quality anime illustrations.</p>
+</div>
+
+<div class="glass-card feature-card">
+<div class="feature-icon">🧸</div>
+<h3>3D</h3>
+<p>Modern 3D rendered images.</p>
+</div>
+
+<div class="glass-card feature-card">
+<div class="feature-icon">🌌</div>
+<h3>Fantasy</h3>
+<p>Create magical fantasy worlds.</p>
+</div>
+
+<div class="glass-card feature-card">
+<div class="feature-icon">🚀</div>
+<h3>Cyberpunk</h3>
+<p>Neon futuristic city scenes.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+     GALLERY
+=========================== -->
+
+<section id="gallery" class="features">
+
+<div class="container">
+
+<h2 class="text-center">
+
+🖼 Community Gallery
+
+</h2>
+
+<div class="preview-grid mt-40">
+
+<div class="preview-card">
+<img src="assets/images/sample1.jpg" alt="Sample 1">
+<div class="preview-content">
+<h3>AI Artwork</h3>
+</div>
+</div>
+
+<div class="preview-card">
+<img src="assets/images/sample2.jpg" alt="Sample 2">
+<div class="preview-content">
+<h3>Fantasy Art</h3>
+</div>
+</div>
+
+<div class="preview-card">
+<img src="assets/images/sample3.jpg" alt="Sample 3">
+<div class="preview-content">
+<h3>Anime Style</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+  <!-- ===========================
+     PRICING
+=========================== -->
+
+<section id="pricing" class="features">
+
+<div class="container">
+
+<h2 class="text-center">
+
+💎 Pricing Plans
+
+</h2>
+
+<div class="pricing-grid mt-40">
+
+<div class="pricing-card">
+
+<h3>Free</h3>
+
+<h1>$0</h1>
+
+<p>5 Images / Day</p>
+
+<p>Standard Quality</p>
+
+<p>Community Support</p>
+
+<button class="btn btn-outline mt-20">
+
+Start Free
+
+</button>
+
+</div>
+
+
+<div class="pricing-card">
+
+<h3>Pro</h3>
+
+<h1>$9.99</h1>
+
+<p>Unlimited Images</p>
+
+<p>HD Quality</p>
+
+<p>Priority Speed</p>
+
+<button class="btn btn-primary mt-20">
+
+Upgrade
+
+</button>
+
+</div>
+
+
+<div class="pricing-card">
+
+<h3>Business</h3>
+
+<h1>$29</h1>
+
+<p>Unlimited Images</p>
+
+<p>Commercial License</p>
+
+<p>API Access</p>
+
+<button class="btn btn-primary mt-20">
+
+Contact Sales
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+     ABOUT
+=========================== -->
+
+<section id="about" class="features">
+
+<div class="container">
+
+<h2 class="text-center">
+
+About AI Image Studio
+
+</h2>
+
+<p class="text-center mt-20">
+
+Create beautiful AI images using advanced AI models.
+Designed for creators, designers and businesses.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+
+<footer>
+
+<div class="container">
+
+<h2>
+
+AI Image Studio
+
+</h2>
+
+<p class="mt-20">
+
+Create amazing AI images with powerful AI tools.
+
+</p>
+
+<p class="mt-40">
+
+© 2026 AI Image Studio
+
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
